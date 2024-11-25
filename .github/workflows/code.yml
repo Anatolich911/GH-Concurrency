@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: Code
 
 # Controls when the workflow will run
 on:
@@ -10,9 +10,9 @@ on:
   pull_request:
     branches: [ "main" ]
 concurrency:
-  group: ${{ github.ref_name }}-blxdfgank
-
+  group: ${{ github.ref_name }}-code
   cancel-in-progress: true
+
   # Allows you to run this workflow manually from the Actions tab
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
