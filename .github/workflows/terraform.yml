@@ -9,9 +9,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-concurrency:
-  group: ${{ github.ref_name }}-terraform
-  cancel-in-progress: true
+concurrency: ${{ github.actor }}
 
   # Allows you to run this workflow manually from the Actions tab
 
