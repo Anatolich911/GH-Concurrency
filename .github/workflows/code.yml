@@ -9,9 +9,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-concurrency:
-  group: ${{ github.workflow }}
-  cancel-in-progress: true
+concurrency: ${{ github.workflow }}
+
 
   # Allows you to run this workflow manually from the Actions tab
 
